@@ -41,7 +41,7 @@ div[data-testid="stSidebar"] *{color:white !important;}
 """
 st.markdown(CSS, unsafe_allow_html=True)
 
-API_BASE = "https://soytraderconsciente.com/diarioconsciente/api/gr"
+API_BASE = "https://juancarlosmonsalveg.com/diarioconsciente/api/gr"
 
 def verificar_token(token):
     try:
