@@ -10,14 +10,14 @@ API_BASE = 'https://juancarlosmonsalveg.com/diarioconsciente/api/gr'
 
 def verificar_token(token):
     try:
-        r = requests.get(f'{API_BASE}/verify_token.php', params={'token': token}, timeout=5)
+        r = requests.get(f'{API_BASE}/verify_token.php', params={'token': token}, timeout=10)
         return r.json()
     except:
         return {'valid': False, 'error': 'Error de conexion'}
 
 def verificar_sesion(session_token):
     try:
-        r = requests.get(f'{API_BASE}/verify_session.php', params={'session_token': session_token}, timeout=5)
+        r = requests.get(f'{API_BASE}/verify_session.php', params={'session_token': session_token}, timeout=10)
         return r.json()
     except:
         return {'valid': False, 'error': 'Error de conexion'}
